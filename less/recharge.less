@@ -1,0 +1,141 @@
+#tab{
+    .recharge{
+        margin-left:0 !important;
+        margin-right:0;
+        h2{
+            font-size: 24px;
+            color:#09d;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size:14px;
+            margin:0 0 10px;
+        }
+        background:#F4F8FA;
+        padding: 20px;
+        color: #F4F8FA;
+        border-left: 2px solid #0099DD;
+        margin-bottom: 20px;
+    }
+    .list-group{
+        font-size:14px;
+        padding: 0;
+        cursor: pointer;
+         li{ 
+            border: 1px solid transparent;
+            border-radius:3px 3px 0 0 ;
+            padding:10px 15px !important;
+            list-style: none;
+            border-bottom: 1px solid #ddd !important;
+            background:#fff; 
+            margin-bottom: -1px;
+            margin-right:2px;
+             &.cur{
+                border: 1px solid #ddd;
+                border-bottom:0 !important;
+                border-bottom: none;
+                color:#555 !important;
+                &:hover{
+                    background:#fff;
+                    a{
+                        color:#333;
+                    }
+                }
+                
+            }
+            &:hover{
+                background:#eee;
+                a{
+                    color:#23527C;
+                }
+            }
+         }
+    }
+    .tab-content{
+       .tab-pane1{
+        border: 1px solid #ddd;
+       }
+        >div{
+            display: none;
+            &.cur{
+                display: block;
+            }
+        }
+        .content{ 
+            border: 1px solid #ddd;
+            .tabpane{
+              margin-left:15px;
+              margin-right:15px;
+              .table{
+                  thead{
+                      th{
+                          border-top: 0;
+                      }
+                      tr{
+                          border-top:0 !important;
+                      }
+                  }
+                span{
+                  display: block;
+                  width: 150px;
+                  height: 30px;
+                }
+                .bg-color1{
+                  background: url("../images/bank_list.png");
+                }
+                .bg-color2{
+                  background: url("../images/bank_list.png") 0 -36px;
+                }
+                .bg-color3{
+                  background: url("../images/bank_list.png") 0 -108px;
+                }
+            }
+              .text-primary{
+                  font-size:14px;
+                  color:#337ab7 !important;
+            }
+            .h4 {
+                  font-size:18px;
+            }
+            }
+            
+            .form-group:first-child(1){
+                margin-left:0;
+            }
+          
+          } 
+    }
+}
+#rechargeForm{
+        .form-group{
+            font-size:14px;
+            margin-left:15px;
+            // margin-right:-15px;
+         .col-sm-2{
+             font-weight: bold;
+    
+         } 
+         input{
+             width: 280px;
+             height: 34px;
+         }  
+    }
+}
+@media(min-width:768px){
+        .col-sm-10{
+            width: 83%;
+        } 
+}
+@media(min-width:768px){
+        .col-sm-2{
+            width:17%;
+        } 
+}
+@media(min-width:768px){
+        .col-sm-offset-2{
+            margin-left:16%;
+        }
+}
+
+

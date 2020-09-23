@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="./dist/css/invest.min.css">
+<!-- 投资列表 -->
+<div class="page-invest">
+    <div class="container">
+        <h3>投资列表</h3>
+        <div class="btn-group btn-group-toggle row" data-toggle="buttons">
+            <p>标的状态</p>
+            <label class="btn active tn">
+                <input type="radio" name="options" id="option1">全部
+            </label>
+            <label class="btn">
+                <input type="radio" name="options" id="option2"> 招标中
+            </label>
+            <label class="btn">
+                <input type="radio" name="options" id="option3"> 还款中
+            </label>
+        </div>
+    </div>
+    <table class="table container">
+        <thead>
+            <tr>
+                <th scope="col">借款人</th>
+                <th scope="col">借款标题</th>
+                <th scope="col">年利率</th>
+                <th scope="col">金额</th>
+                <th scope="col">还款方式</th>
+                <th scope="col">进度</th>
+                <th scope="col">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">zs</th>
+                <td>给我2000度过难关</td>
+                <td class="count">10.00%</td>
+                <td class="count">2,000.00</td>
+                <td>按月分期还款</td>
+                <td>78.00%</td>
+                <td>
+                    <a href="#borrow-info">查看</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

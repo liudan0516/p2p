@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/iconfonts/css/font-awesome.css">
+    <link rel="stylesheet" href="./dist/css/register.min.css">
+</head>
+
+<body>
+    <!-- 网页顶部导航 -->
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand bgcolor">
+                    <span class="fa fa-phone"></span>
+                    <span class="tel">028-86261949</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">首页</span></a>
+                        </li>
+                        <li class="nav-item login-status">
+                            <a class="nav-link" href="./register.html">注册</a>
+                        </li>
+                        <li class="nav-item login-status">
+                            <a class="nav-link" href="./login.html">登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">帮助</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">联系客服</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+ 
+    <!-- 用户注册 -->
+    <div id="user-register" class="container">
+        <div class="user">
+            <p>用户注册</p>
+        </div>
+        <div class="register">
+            <form action="">
+                <p>请填写注册信息，点击“提交注册”即可完成注册！</p>
+                <div>
+                    <br>
+                    &emsp;用户名：<input type="text" id="username">
+                    <p id="usermsg"></p>
+                </div>
+                <div>
+                    <br>
+                    &emsp;&emsp;密码：<input type="password" id="pwd">
+                    <p id="pwdmsg"></p>
+                </div>
+                <div>
+                    <br>
+                    确认密码：<input type="text" id="psd">
+                    <p id="psdmsg"></p>
+                </div>
+                <div>
+                    <br>
+                    &emsp;&emsp;邮箱：<input type="text" id="email">
+                    <p id="emailmsg"></p>
+                </div>
+                <div>
+                    <br>
+                    &emsp;&emsp;昵称：<input type="text" id="nickname">
+                    <p id="nicknamemsg"></p>
+                </div>
+                <div style="margin-top:15px">
+                    <button type="button" class="btn">同意协议并注册</button>
+                    <a href="./login.html">已有账号，马上登录</a>
+                </div>
+                <p style="padding-left:80px;margin-top:20px">
+                    <a href="#">《使用协议说明书》</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div id="footer">
+        <div class="container row">
+            <div class="col-sm-8">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有：&emsp;2006-2016成都源代码教育咨询有限公司</p>
+                <p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电&emsp;&emsp;话：&emsp;028-86261949&nbsp; / 400-808-6840&emsp;
+                    邮箱：&emsp;yuandaima@itsource.cn</p>
+                <p>
+                    <a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>&emsp;&emsp;<a
+                        href="http://www.gaj.chengdu.gov.cn">蜀公网安备510114990541</a>
+                </p>
+                <div style="display: inline-block;"></div>
+            </div>
+            <div class="col-sm-2">
+                <div>
+                    <p style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微博：</p>
+                    <a href="http://t.qq.com/it-source" target="_blank"> <img src="images/tecent.png"
+                            alt="Responsive image">
+                    </a> <a href="http://weibo.com/cditcast" target="_blank"> <img src="images/sina.png"
+                            alt="Responsive image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div>
+                    <p style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微信：</p>
+                    <img src="images/wx.jpg" alt="Responsive image" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/jquery/jquery.3.4.1.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

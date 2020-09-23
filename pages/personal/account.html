@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="./dist/css/account.min.css">
+<div class="clo-sm-9">
+    <div class="info row">
+        <div class="login-info">
+            <img src="./dist/images/head_icon.jpg" alt="" class="icon">
+        </div>
+        <div class="content-info">
+            <p>
+                <label for="">昵&emsp;称：</label>
+                <span id="nickname"></span>
+            </p>
+            <p>
+                <label for="">用户名：</label>
+                <span id="username"></span>
+            </p>
+            <p>
+                <label for="">最后登录时间：</label>
+                <span id="lastlogintime"></span>
+            </p>
+            <!-- <p>昵&emsp;称：源代码教育</p>
+            <p>用户名：小强</p>
+            <p>最后登录时间：2016-10-25 15:30:10</p> -->
+        </div>
+    </div>
+    <div class="account">
+        <div class="info-money row">
+            <div class="col-sm-4">
+                <p>
+                    <label for=""> 总金额：</label>
+                    <span id="totalmoney">元</span>
+                </p>
+                <!-- 总金额：
+                <span>元</span> -->
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <label for=""> 可用金额：</label>
+                    <span id="usablemoney">元</span>
+                </p>
+                <!-- 可用金额：
+                <span>元</span> -->
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <label for=""> 冻结金额：</label>
+                    <span id="blockedmoney">元</span>
+                </p>
+                <!-- 冻结金额：
+                <span>元</span> -->
+            </div>
+        </div>
+        <div id="echarts" style="width: 600px;height:400px;"></div>
+        <div class="info-invest">
+            <a href="#recharge" class="btn-primary btn-lg btn-invest">账户充值</a>
+            <a class="btn-danger btn-lg">账户提现</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="account-top">
+                    <img src="./dist/images/shiming.png" alt="">
+                </div>
+                <div class="account-center">
+                    <h6>实名认证</h6>
+                    <p>未认证
+                        <a href="#">马上认证</a>
+                    </p>
+                </div>
+                <p class="font13">实名认证之后才能在平台投资</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="account-top">
+                    <img src="./dist/images/shouji.jpg" alt="">
+                </div>
+                <div class="account-center">
+                    <h6>手机认证</h6>
+                    <p>已认证
+                        <a href="#">查看</a>
+                    </p>
+                </div>
+                <p class="font13">可以收到系统操作信息,并增加使用安全性</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="account-top">
+                    <img src="./dist/images/youxiang.jpg" alt="">
+                </div>
+                <div class="account-center">
+                    <h6>邮箱认证</h6>
+                    <p>已认证
+                        <a href="#">查看</a>
+                    </p>
+                </div>
+                <p class="font13">您可以设置邮箱来接收重要信息</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="padd">
+                    <div class="account-top">
+                        <img src="./dist/images/baozhan.jpg" alt="">
+                    </div>
+                    <div class="account-center">
+                        <h6>VIP会员</h6>
+                        <p>普通用户
+                            <a href="#">查看</a>
+                        </p>
+                    </div>
+                    <p class="font13">VIP会员，让你更快捷的投资</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 模态框 -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+    修改用户信息
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">修改用户信息</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">昵称：</label>
+                        <input type="text" class="form-control" id="input-nickname" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">邮箱：</label>
+                        <input type="text" class="form-control" id="input-email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary btn-sm update-account">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./lib/echarts/echarts.js"></script>
+<script src="./js/personal/account.js"></script>

@@ -1,0 +1,161 @@
+<link rel="stylesheet" href="./dist/css/borrow-apply.min.css">
+<!-- 导航菜单 -->
+<div class="col-sm-9">
+    <div class="borrow-apply">
+        <h2>信用借款</h2>
+        <span>授信额度：</span>
+        <span class="color">2000 </span>
+        <span class="font">可借金额：</span>
+        <span class="color">2000 </span>
+    </div>
+    <div class="info">
+        借款信息
+        <span class="borrow-type">信用标</span>
+    </div>
+    <form class="form-horizontal el-borrow-form col-lg">
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3">
+                <div class="input-group">
+                    <label for=""  class="inlineForm">借款金额</label>
+                    <input type="text" class="form-control" id="borrowmoney">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">元</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3">
+                <div class="input-group">
+                    <label for="" class="inlineForm">借款利息</label>
+                    <input type="text" class="form-control" id="interest">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3">
+                <div class="input-group">
+                    <label for="" class="inlineForm">借款期限</label>
+                    <select class="form-control" id="borrowtime">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">月</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3" id="repaytype">
+                <label class="control-label">
+                    还款方式
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="0" checked="checked" name="repaytype">
+                    按月分期
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="1" name="repaytype">
+                    按月到期
+                </label>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3">
+                <div class="input-group">
+                    <label for="" class="inlineForm">最小投标</label>
+                    <input type="text" class="form-control" id="minbid">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">元</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3">
+                <div class="input-group">
+                    <label for="" class="inlineForm">投标奖金</label>
+                    <input type="text" class="form-control" id="bouns">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-5 mb-3">
+                <div class="input-group">
+                    <label for="" class="inlineForm">招标天数</label>
+                    <select class="form-control" id="days">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">天</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-sm-7 mb-3">
+                <div class="input-group">
+                    <label for="" class="inlineForm">借款标题</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+            </div>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="input-group">
+                <label for="" class="inlineForm">借款描述</label>
+                <div class="col-sm-9 input-group">
+                    <textarea id="info" name="description" class="form-control" style="resize: none;"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-group rowbtn">
+            <button class="btn btn-primary col-lg-offset-3" type="button" id="borrow-btn">
+                提交申请
+            </button>
+        </div>
+        <div class="form-tip">
+            <h1>相关费用</h1>
+            <p>
+                <span class="tip">利息</span>
+                <span>--</span>
+            </p>
+            <p>
+                <span class="tip">奖金</span>
+                <span>--</span>
+            </p>
+            <p>
+                <span class="tip">管理</span>
+                <span>--</span>
+            </p>
+        </div>
+    </form>
+</div>
+<script src="./js/personal/borrow-apply.js"></script>
